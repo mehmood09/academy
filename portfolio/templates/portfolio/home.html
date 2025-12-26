@@ -1,0 +1,514 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Home - Alhamd IT Academy{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <i class="fas fa-code floating-icons icon-1"></i>
+        <i class="fas fa-laptop-code floating-icons icon-2"></i>
+        <i class="fas fa-brain floating-icons icon-3"></i>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transform Your Career with <span style="color: #ffd700;">Tech Skills</span></h1>
+                <p style="text-align: justify;">Master cutting-edge technologies with industry experts. Join thousands of students who've launched successful careers in tech through our comprehensive training programs.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#programs" class="btn-primary">
+                        <i class="fas fa-rocket"></i> Explore Courses
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-phone"></i> Contact Us
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label text-white fw-bold">Students Trained</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label text-white">Success Rate</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label text-white">Job Placement</span>
+                    </div>
+                </div>
+            </div>
+
+            {% comment %} <div class="hero-image">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+                                <!-- Computer Monitor -->
+                                <rect x="150" y="150" width="200" height="140" rx="10" fill="#fff" opacity="0.9" class="pulse"/>
+                                <rect x="140" y="290" width="220" height="15" rx="7" fill="#fff" opacity="0.8"/>
+                                <rect x="210" y="305" width="80" height="30" rx="5" fill="#fff" opacity="0.7"/>
+                                
+                                <!-- Code Lines on Screen -->
+                                <rect x="170" y="170" width="80" height="8" rx="4" fill="#667eea" class="float-animation"/>
+                                <rect x="170" y="190" width="120" height="8" rx="4" fill="#764ba2" class="float-animation" style="animation-delay: 0.2s"/>
+                                <rect x="170" y="210" width="100" height="8" rx="4" fill="#667eea" class="float-animation" style="animation-delay: 0.4s"/>
+                                <rect x="170" y="230" width="140" height="8" rx="4" fill="#764ba2" class="float-animation" style="animation-delay: 0.6s"/>
+                                <rect x="170" y="250" width="90" height="8" rx="4" fill="#667eea" class="float-animation" style="animation-delay: 0.8s"/>
+                                
+                                <!-- Python Logo -->
+                                <circle cx="100" cy="100" r="35" fill="#ffc107" class="float-pill-1"/>
+                                <text x="100" y="110" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">Py</text>
+                                
+                                <!-- Django Logo -->
+                                <rect x="360" y="80" width="70" height="70" rx="10" fill="#0d6efd" class="float-pill-2"/>
+                                <text x="395" y="122" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">DJ</text>
+                                
+                                <!-- React Logo -->
+                                <circle cx="420" cy="350" r="35" fill="#0dcaf0" class="pulse-slow"/>
+                                <text x="420" y="360" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">R</text>
+                                
+                                <!-- Data Chart -->
+                                <g class="float-animation">
+                                    <rect x="50" y="350" width="20" height="60" rx="5" fill="#198754" opacity="0.8"/>
+                                    <rect x="75" y="320" width="20" height="90" rx="5" fill="#198754" opacity="0.8"/>
+                                    <rect x="100" y="300" width="20" height="110" rx="5" fill="#198754" opacity="0.8"/>
+                                </g>
+                                
+                                <!-- Graduation Cap -->
+                                <g class="rotate-animation" transform="translate(250, 80)">
+                                    <polygon points="0,-20 -30,0 0,10 30,0" fill="#ffc107" opacity="0.9"/>
+                                    <rect x="-5" y="10" width="10" height="20" rx="2" fill="#ffc107" opacity="0.9"/>
+                                </g>
+                                
+                                <!-- Floating Code Brackets -->
+                                <text x="380" y="250" font-size="40" font-weight="bold" fill="#fff" opacity="0.6" class="pulse">&lt;/&gt;</text>
+                                <text x="80" y="250" font-size="35" font-weight="bold" fill="#fff" opacity="0.5" class="pulse-slow">{}</text>
+                                
+                                <!-- Success Line Graph -->
+                                <path d="M 50 450 L 100 430 L 150 420 L 200 390 L 250 380 L 300 360 L 350 350 L 400 330 L 450 320" 
+                                      stroke="#28a745" stroke-width="4" fill="none" class="draw-animation"/>
+                                <circle cx="450" cy="320" r="8" fill="#28a745" class="pulse"/>
+                            </svg>
+
+            </div> {% endcomment %}
+
+            <div class="hero-image-container">
+                        <div class="image-wrapper">
+                            <!-- Animated SVG Illustration -->
+                            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+                                <!-- Computer Monitor -->
+                                <rect x="150" y="150" width="200" height="140" rx="10" fill="#fff" opacity="0.9" class="pulse"/>
+                                <rect x="140" y="290" width="220" height="15" rx="7" fill="#fff" opacity="0.8"/>
+                                <rect x="210" y="305" width="80" height="30" rx="5" fill="#fff" opacity="0.7"/>
+                                
+                                <!-- Code Lines on Screen -->
+                                <rect x="170" y="170" width="80" height="8" rx="4" fill="#667eea" class="float-animation"/>
+                                <rect x="170" y="190" width="120" height="8" rx="4" fill="#764ba2" class="float-animation" style="animation-delay: 0.2s"/>
+                                <rect x="170" y="210" width="100" height="8" rx="4" fill="#667eea" class="float-animation" style="animation-delay: 0.4s"/>
+                                <rect x="170" y="230" width="140" height="8" rx="4" fill="#764ba2" class="float-animation" style="animation-delay: 0.6s"/>
+                                <rect x="170" y="250" width="90" height="8" rx="4" fill="#667eea" class="float-animation" style="animation-delay: 0.8s"/>
+                                
+                                <!-- Python Logo -->
+                                <circle cx="100" cy="100" r="35" fill="#ffc107" class="float-pill-1"/>
+                                <text x="100" y="110" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">Py</text>
+                                
+                                <!-- Django Logo -->
+                                <rect x="360" y="80" width="70" height="70" rx="10" fill="#0d6efd" class="float-pill-2"/>
+                                <text x="395" y="122" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">DJ</text>
+                                
+                                <!-- React Logo -->
+                                <circle cx="420" cy="350" r="35" fill="#0dcaf0" class="pulse-slow"/>
+                                <text x="420" y="360" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">R</text>
+                                
+                                <!-- Data Chart -->
+                                <g class="float-animation">
+                                    <rect x="50" y="350" width="20" height="60" rx="5" fill="#198754" opacity="0.8"/>
+                                    <rect x="75" y="320" width="20" height="90" rx="5" fill="#198754" opacity="0.8"/>
+                                    <rect x="100" y="300" width="20" height="110" rx="5" fill="#198754" opacity="0.8"/>
+                                </g>
+                                
+                                <!-- Graduation Cap -->
+                                <g class="rotate-animation" transform="translate(250, 80)">
+                                    <polygon points="0,-20 -30,0 0,10 30,0" fill="#ffc107" opacity="0.9"/>
+                                    <rect x="-5" y="10" width="10" height="20" rx="2" fill="#ffc107" opacity="0.9"/>
+                                </g>
+                                
+                                <!-- Floating Code Brackets -->
+                                <text x="380" y="250" font-size="40" font-weight="bold" fill="#fff" opacity="0.6" class="pulse">&lt;/&gt;</text>
+                                <text x="80" y="250" font-size="35" font-weight="bold" fill="#fff" opacity="0.5" class="pulse-slow">{}</text>
+                                
+                                <!-- Success Line Graph -->
+                                <path d="M 50 450 L 100 430 L 150 420 L 200 390 L 250 380 L 300 360 L 350 350 L 400 330 L 450 320" 
+                                      stroke="#28a745" stroke-width="4" fill="none" class="draw-animation"/>
+                                <circle cx="450" cy="320" r="8" fill="#28a745" class="pulse"/>
+                            </svg>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section" id="programs">
+        <div class="programs-container">
+            <div class="text-center text-white mb-5">
+                <h2 class="display-4">
+                    <i class="fas fa-graduation-cap"></i> Professional Training Programs
+                </h2>
+                <p class="lead">Master in-demand tech skills with expert-led comprehensive courses</p>
+                <div class="header-divider"></div>
+            </div>
+
+            <div class="row">
+                <!-- Data Science Program -->
+                {% comment %} <div class="program-card">
+                    <div class="popular-badge">
+                        <i class="fas fa-fire"></i> Most Popular
+                    </div>
+                    <div class="program-card-header">
+                        <div class="program-gradient gradient-1"></div>
+                        <div class="program-icon-container">
+                            <i class="fas fa-chart-line program-icon"></i>
+                        </div>
+                        <div class="duration-badge">
+                            <i class="far fa-clock"></i> 6 Months
+                        </div>
+                    </div>
+
+                    <div class="program-card-body">
+                        <h5 class="program-name">
+                            Data Science & Machine Learning
+                        </h5>
+
+                        <p class="program-description">
+                            Master data analysis, machine learning algorithms, and AI implementation with hands-on projects and real-world datasets.
+                        </p>
+
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Python, Pandas, NumPy</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Machine Learning & Deep Learning</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Data Visualization & Analytics</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-world Projects Portfolio</span>
+                            </div>
+                        </div>
+
+                        <div class="program-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">40+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">300+</span>
+                                <span class="stat-label">Hours</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">Live</span>
+                                <span class="stat-label">Sessions</span>
+                            </div>
+                        </div>
+
+                        <div class="fee-section">
+                            <div class="fee-label">Course Fee</div>
+                            <div class="fee-amount">
+                                $1,299 <small>/course</small>
+                            </div>
+                        </div>
+
+                        <button class="btn-enroll">
+                            <i class="fas fa-rocket"></i>
+                            Enroll Now
+                        </button>
+                    </div>
+                </div> {% endcomment %}
+
+                                <!-- Frontend Development Program -->
+                <div class="program-card">
+                    <div class="program-card-header">
+                        <div class="program-gradient gradient-3"></div>
+                        <div class="program-icon-container">
+                            <i class="fas fa-palette program-icon"></i>
+                        </div>
+                        <div class="duration-badge">
+                            <i class="far fa-clock"></i> 2 Months
+                        </div>
+                    </div>
+
+                    <div class="program-card-body">
+                        <h5 class="program-name">
+                            Frontend Web Development
+                        </h5>
+
+                        <p class="program-description">
+                            Create stunning, responsive websites with modern HTML5, CSS3, JavaScript, and popular frameworks like Bootstrap and Tailwind.
+                        </p>
+
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>HTML5, CSS3, JavaScript ES6+</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Responsive Design & UI/UX</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Bootstrap & Tailwind CSS</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Git & Version Control</span>
+                            </div>
+                        </div>
+
+                        <div class="fee-section">
+                            <div class="fee-amount">
+                                $50 <small>/course</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Stack Django Program -->
+                <div class="program-card">
+                    <div class="program-card-header">
+                        <div class="program-gradient gradient-2"></div>
+                        <div class="program-icon-container">
+                            <i class="fas fa-code program-icon"></i>
+                        </div>
+                        <div class="duration-badge">
+                            <i class="far fa-clock"></i> 4 Months
+                        </div>
+                    </div>
+
+                    <div class="program-card-body">
+                        <h5 class="program-name">
+                            Full Stack Web Development
+                        </h5>
+
+                        <p class="program-description">
+                            Become a full-stack developer with Python Django. Build scalable web applications from frontend to backend deployment.
+                        </p>
+
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Python & Django Framework</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>REST APIs & Database Design</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>HTML, CSS, JavaScript</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Deployment & DevOps Basics</span>
+                            </div>
+                        </div>
+                        
+                        <div class="fee-section">
+                            <div class="fee-amount">
+                                $100 <small>/course</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- React Development Program -->
+                <div class="program-card">
+                    <div class="program-card-header">
+                        <div class="program-gradient gradient-4"></div>
+                        <div class="program-icon-container">
+                            <i class="fab fa-react program-icon"></i>
+                        </div>
+                        <div class="duration-badge">
+                            <i class="far fa-clock"></i> 2 Months
+                        </div>
+                    </div>
+
+                    <div class="program-card-body">
+                        <h5 class="program-name">
+                            React.js Development
+                        </h5>
+
+                        <p class="program-description">
+                            Build modern, single-page applications with React.js, hooks, state management, and component-based architecture.
+                        </p>
+
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>React.js & Advanced Hooks</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Redux & State Management</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>React Router & API Integration</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Testing & Best Practices</span>
+                            </div>
+                        </div>
+
+                        <div class="fee-section">
+                            <div class="fee-amount">
+                                $70 <small>/course</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section" id="why-choose">
+        <div class="why-container">
+            <div class="text-center text-white mb-5">
+                <h2 class="display-4">
+                    <i class="fas fa-star"></i> Why Choose Us
+                </h2>
+                <p class="lead">Discover what makes our training programs stand out from the rest</p>
+                <div class="header-divider"></div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="feature-title">Expert Instructors</h3>
+                    <p class="feature-description">Learn from industry professionals with 10+ years of real-world experience in their fields.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="feature-title">Hands-On Projects</h3>
+                    <p class="feature-description">Build a professional portfolio with real-world projects that showcase your skills.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="feature-title">Industry Certification</h3>
+                    <p class="feature-description">Receive recognized certificates upon completion to boost your career prospects.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <div class="text-center text-white mb-5">
+                <h2 class="display-4">
+                    <i class="fas fa-question-circle"></i> Frequently Asked Questions
+                </h2>
+                <p class="lead">Got questions? We've got answers to help you get started</p>
+                <div class="header-divider"></div>
+            </div>
+
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon-wrapper">
+                            <span class="question-icon">Q</span>
+                            <span>Do I need prior programming experience?</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        No prior experience is required for our beginner-friendly courses. We start with fundamentals and gradually progress to advanced topics. However, for specialized courses like Data Science, basic programming knowledge is recommended.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon-wrapper">
+                            <span class="question-icon">Q</span>
+                            <span>What is the duration of each course?</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Course duration varies by program. Frontend Development and React courses are 4 months, Full Stack Django is 5 months, and Data Science is 6 months. All courses include flexible scheduling to accommodate your lifestyle.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon-wrapper">
+                            <span class="question-icon">Q</span>
+                            <span>Are the courses live or pre-recorded?</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We offer a hybrid approach! You'll get live interactive sessions with instructors for real-time learning and Q&A, plus access to pre-recorded lectures that you can review anytime. This gives you the best of both worlds.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon-wrapper">
+                            <span class="question-icon">Q</span>
+                            <span>Will I receive a certificate after completion?</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Upon successful completion of the course and final project, you'll receive an industry-recognized certificate that you can add to your resume and LinkedIn profile to showcase your new skills.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon-wrapper">
+                            <span class="question-icon">Q</span>
+                            <span>Do you provide job placement assistance?</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! We offer comprehensive career support including resume building, portfolio review, mock interviews, and connections with hiring partners. Our dedicated placement team works with you until you land your desired role.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon-wrapper">
+                            <span class="question-icon">Q</span>
+                            <span>Can I pay in installments?</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we offer flexible payment plans! You can choose to pay in monthly installments with zero interest. We also provide early bird discounts and scholarship opportunities for eligible students.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
